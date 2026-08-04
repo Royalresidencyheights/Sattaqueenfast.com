@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SattaQueenFast</title>
+
+<meta name="description" content="SattaQueenFast Entertainment Result Portal">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+header{
+background:#ffffff;
+padding:20px;
+text-align:center;
+border-bottom:4px solid #d50000;
+}
+
+.logo{
+font-size:38px;
+font-weight:bold;
+color:#000;
+}
+
+.logo span{
+color:#d50000;
+}
+
+.tagline{
+margin-top:8px;
+font-size:16px;
+color:#555;
+}
+
+nav{
+background:#111;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+padding:15px 18px;
+font-size:16px;
+}
+
+nav a:hover{
+background:#d50000;
+}
+
+.container{
+width:95%;
+max-width:1200px;
+margin:auto;
+padding:20px 0;
+}
+
+.notice{
+background:#d50000;
+color:#fff;
+padding:18px;
+font-size:17px;
+line-height:1.7;
+text-align:center;
+border-radius:6px;
+margin-bottom:20px;
+}
+
+.updated{
+text-align:center;
+font-size:22px;
+font-weight:bold;
+color:#008000;
+margin-bottom:20px;
+}
+
+.title{
+background:#00a86b;
+color:#fff;
+padding:15px;
+font-size:28px;
+font-weight:bold;
+text-align:center;
+border-radius:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<span>Satta</span>QueenFast
+</div>
+
+<div class="tagline">
+Fast Entertainment Result Portal
+</div>
+
+</header>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Today's Result</a>
+<a href="#">Old Results</a>
+<a href="#">Charts</a>
+<a href="#">Contact</a>
+
+</nav>
+
+<div class="container">
+
+<div class="notice">
+
+<b>DISCLAIMER</b><br><br>
+
+This website is created only for entertainment and informational purposes.
+It does not promote or support gambling or any illegal activity.
+
+</div>
+
+<div class="updated">
+
+Updated :
+<span id="time"></span>
+
+</div>
+
+<div class="title">
+
+Today's Results
+
+</div>
+
+</div>
+
+<script>
+
+function updateTime(){
+
+document.getElementById("time").innerHTML =
+new Date().toLocaleString();
+
+}
+
+updateTime();
+
+setInterval(updateTime,1000);
+
+</script>
+
+</body>
+</html>
+<!-- LIVE RESULT TABLE -->
+
+<style>
+
+.result-table{
+width:100%;
+border-collapse:collapse;
+background:#fff;
+margin-bottom:25px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.result-table th{
+background:#333;
+color:#fff;
+padding:15px;
+font-size:18px;
+}
+
+.result-table td{
+padding:16px 10px;
+border-bottom:1px solid #ddd;
+text-align:center;
+font-size:20px;
+}
+
+.result-table td:first-child{
+text-align:left;
+font-weight:bold;
+font-size:22px;
+}
+
+.live-title{
+background:#ff3d3d;
+color:#fff;
+padding:12px;
+font-size:24px;
+font-weight:bold;
+margin-top:20px;
+text-align:center;
+}
+
+.time{
+display:block;
+font-size:14px;
+color:#666;
+margin-top:6px;
+font-weight:normal;
+}
+
+.chart-btn{
+display:inline-block;
+margin-top:8px;
+padding:6px 12px;
+background:#1565c0;
+color:#fff;
+text-decoration:none;
+border-radius:4px;
+font-size:14px;
+}
+
+.chart-btn:hover{
+background:#0d47a1;
+}
+
+</style>
+
+<div class="live-title">
+LIVE RESULTS
+</div>
+
+<table class="result-table">
+
+<tr>
+<th>Game</th>
+<th>Today</th>
+<th>Yesterday</th>
+</tr>
+
+<tr>
+<td>
+JAISALMER
+<span class="time">10:40 PM</span>
+<a href="#" class="chart-btn">Record Chart</a>
+</td>
+<td><b>88</b></td>
+<td>--</td>
+</tr>
+
+<tr>
+<td>
+BALA JI DADRI
+<span class="time">10:15 PM</span>
+<a href="#" class="chart-btn">Record Chart</a>
+</td>
+<td><b>00</b></td>
+<td>97</td>
+</tr>
+
+<tr>
+<td>
+NEW GHAZIABAD
+<span class="time">09:45 PM</span>
+<a href="#" class="chart-btn">Record Chart</a>
+</td>
+<td><b>04</b></td>
+<td>41</td>
+</tr>
+
+<tr>
+<td>
+NEPAL
+<span class="time">09:30 PM</span>
+<a href="#" class="chart-btn">Record Chart</a>
+</td>
+<td><b>12</b></td>
+<td>37</td>
+</tr>
+
+<tr>
+<td>
+GHAZIABAD
+<span class="time">09:25 PM</span>
+<a href="#" class="chart-btn">Record Chart</a>
+</td>
+<td><b>60</b></td>
+<td>24</td>
+</tr>
+
+<tr>
+<td>
+ROZANA
+<span class="time">09:00 PM</span>
+<a href="#" class="chart-btn">Record Chart</a>
+</td>
+<td><b>14</b></td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>
+BHAGYA LAKSHMI
+<span class="time">09:00 PM</span>
+<a href="#" class="chart-btn">Record Chart</a>
+</td>
+<td><b>13</b></td>
+<td>01</td>
+</tr>
+
+<tr>
+<td>
+AKASH GANGA
+<span class="time">09:00 PM</span>
+<a href="#" class="chart-btn">Record Chart</a>
+</td>
+<td><b>22</b></td>
+<td>56</td>
+</tr>
+
+</table>
+<!-- ========================= -->
+<!-- NEXT RESULTS SECTION -->
+<!-- ========================= -->
+
+<style>
+
+.next-title{
+background:#ff5252;
+color:#fff;
+padding:12px;
+margin-top:25px;
+font-size:24px;
+font-weight:bold;
+text-align:center;
+}
+
+.next-table{
+width:100%;
+border-collapse:collapse;
+background:#fff;
+margin-bottom:25px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.next-table th{
+background:#333;
+color:#fff;
+padding:15px;
+font-size:18px;
+}
+
+.next-table td{
+padding:16px 10px;
+border-bottom:1px solid #ddd;
+text-align:center;
+font-size:20px;
+}
+
+.next-table td:first-child{
+text-align:left;
+font-weight:bold;
+font-size:22px;
+}
+
+.record-btn{
+display:inline-block;
+margin-top:8px;
+padding:6px 12px;
+background:#1565c0;
+color:#fff;
+text-decoration:none;
+border-radius:4px;
+font-size:14px;
+}
+
+.record-btn:hover{
+background:#0d47a1;
+}
+
+.game-time{
+display:block;
+font-size:14px;
+color:#666;
+margin-top:6px;
+}
+
+.pending{
+color:#d50000;
+font-weight:bold;
+}
+
+</style>
+
+<div class="next-title">
+NEXT RESULTS
+</div>
+
+<table class="next-table">
+
+<tr>
+<th>Game</th>
+<th>Expected</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>
+NEW GALI
+<span class="game-time">11:00 PM</span>
+<a href="#" class="record-btn">Record Chart</a>
+</td>
+<td>96</td>
+<td class="pending">XX</td>
+</tr>
+
+<tr>
+<td>
+SHALIMAR
+<span class="game-time">11:00 PM</span>
+<a href="#" class="record-btn">Record Chart</a>
+</td>
+<td>40</td>
+<td class="pending">XX</td>
+</tr>
+
+<tr>
+<td>
+DELHI EVENING
+<span class="game-time">11:10 PM</span>
+<a href="#" class="record-btn">Record Chart</a>
+</td>
+<td>87</td>
+<td class="pending">XX</td>
+</tr>
+
+<tr>
+<td>
+GALI
+<span class="game-time">11:25 PM</span>
+<a href="#" class="record-btn">Record Chart</a>
+</td>
+<td>59</td>
+<td class="pending">XX</td>
+</tr>
+
+<tr>
+<td>
+CHOTI GALI
+<span class="game-time">11:50 PM</span>
+<a href="#" class="record-btn">Record Chart</a>
+</td>
+<td>75</td>
+<td class="pending">XX</td>
+</tr>
+
+<tr>
+<td>
+NOIDA KING
+<span class="game-time">01:15 AM</span>
+<a href="#" class="record-btn">Record Chart</a>
+</td>
+<td>66</td>
+<td class="pending">XX</td>
+</tr>
+
+<tr>
+<td>
+BIKANER SUPER
+<span class="game-time">02:20 AM</span>
+<a href="#" class="record-btn">Record Chart</a>
+</td>
+<td>01</td>
+<td class="pending">XX</td>
+</tr>
+
+<tr>
+<td>
+CHAMBAL KING
+<span class="game-time">06:00 AM</span>
+<a href="#" class="record-btn">Record Chart</a>
+</td>
+<td>37</td>
+<td class="pending">XX</td>
+</tr>
+
+</table>
+<!-- ========================= -->
+<!-- MONTHLY RESULT CHART -->
+<!-- ========================= -->
+
+<style>
+
+.chart-title{
+background:#39c79d;
+color:#fff;
+padding:15px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+margin-top:25px;
+}
+
+.month-chart{
+width:100%;
+border-collapse:collapse;
+background:#fff;
+margin-bottom:25px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.month-chart th{
+background:#ffc107;
+color:#000;
+padding:12px;
+font-size:18px;
+border:1px solid #ddd;
+}
+
+.month-chart td{
+padding:12px;
+text-align:center;
+font-size:18px;
+border:1px solid #ddd;
+}
+
+.chart-buttons{
+display:flex;
+justify-content:space-between;
+gap:10px;
+margin:20px 0;
+}
+
+.chart-buttons a{
+flex:1;
+text-align:center;
+background:#1565c0;
+color:#fff;
+padding:15px;
+text-decoration:none;
+font-size:20px;
+border-radius:5px;
+}
+
+.chart-buttons a:hover{
+background:#0d47a1;
+}
+
+.select-box{
+background:#ffc107;
+padding:25px;
+border-radius:6px;
+margin-top:20px;
+text-align:center;
+}
+
+.select-box h3{
+margin-bottom:20px;
+font-size:24px;
+}
+
+.select-box select{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+font-size:18px;
+border:1px solid #999;
+border-radius:4px;
+}
+
+.go-btn{
+width:100%;
+padding:15px;
+background:#1565c0;
+color:#fff;
+font-size:22px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.go-btn:hover{
+background:#0d47a1;
+}
+
+</style>
+
+<div class="chart-title">
+Monthly Result Chart
+</div>
+
+<table class="month-chart">
+
+<tr>
+<th>Date</th>
+<th>DSWR</th>
+<th>FRBD</th>
+<th>GZBD</th>
+<th>GALI</th>
+</tr>
+
+<tr>
+<td>01</td>
+<td>XX</td>
+<td>57</td>
+<td>23</td>
+<td>92</td>
+</tr>
+
+<tr>
+<td>02</td>
+<td>31</td>
+<td>06</td>
+<td>15</td>
+<td>31</td>
+</tr>
+
+<tr>
+<td>03</td>
+<td>74</td>
+<td>95</td>
+<td>60</td>
+<td>59</td>
+</tr>
+
+<tr>
+<td>04</td>
+<td>31</td>
+<td>12</td>
+<td>24</td>
+<td>XX</td>
+</tr>
+
+</table>
+
+<div class="chart-buttons">
+
+<a href="#">◀ Previous</a>
+
+<a href="#">Next ▶</a>
+
+</div>
+
+<div class="select-box">
+
+<h3>Select Month & Year</h3>
+
+<select>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option selected>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+
+<select>
+<option>2024</option>
+<option>2025</option>
+<option selected>2026</option>
+<option>2027</option>
+</select>
+
+<button class="go-btn">
+Go
+</button>
+
+</div>
+<!-- ========================= -->
+<!-- OLD RESULTS + FOOTER -->
+<!-- ========================= -->
+
+<style>
+
+.old-title{
+background:#e53935;
+color:#fff;
+padding:14px;
+text-align:center;
+font-size:26px;
+font-weight:bold;
+margin-top:30px;
+}
+
+.old-table{
+width:100%;
+border-collapse:collapse;
+background:#fff;
+margin-bottom:25px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.old-table th{
+background:#333;
+color:#fff;
+padding:12px;
+font-size:18px;
+}
+
+.old-table td{
+padding:12px;
+text-align:center;
+border:1px solid #ddd;
+font-size:18px;
+}
+
+.old-table tr:nth-child(even){
+background:#f7f7f7;
+}
+
+.footer{
+background:#111;
+color:#fff;
+padding:35px 20px;
+margin-top:30px;
+}
+
+.footer h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.footer p{
+line-height:1.8;
+text-align:center;
+font-size:16px;
+}
+
+.footer-menu{
+margin:25px 0;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.footer-menu a{
+color:#fff;
+text-decoration:none;
+background:#2196f3;
+padding:10px 18px;
+border-radius:4px;
+}
+
+.footer-menu a:hover{
+background:#1565c0;
+}
+
+.copy{
+margin-top:25px;
+text-align:center;
+font-size:15px;
+border-top:1px solid #444;
+padding-top:20px;
+color:#bbb;
+}
+
+</style>
+
+<div class="old-title">
+Old Results
+</div>
+
+<table class="old-table">
+
+<tr>
+<th>Date</th>
+<th>Result</th>
+</tr>
+
+<tr>
+<td>04 Aug 2026</td>
+<td>60</td>
+</tr>
+
+<tr>
+<td>03 Aug 2026</td>
+<td>24</td>
+</tr>
+
+<tr>
+<td>02 Aug 2026</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>01 Aug 2026</td>
+<td>31</td>
+</tr>
+
+<tr>
+<td>31 Jul 2026</td>
+<td>87</td>
+</tr>
+
+</table>
+
+<footer class="footer">
+
+<h2>Fast Result Portal</h2>
+
+<p>
+This website is created only for entertainment and informational purposes.
+It does not promote betting, gambling or any illegal activity.
+</p>
+
+<div class="footer-menu">
+
+<a href="#">Home</a>
+
+<a href="#">Today's Result</a>
+
+<a href="#">Old Results</a>
+
+<a href="#">Contact</a>
+
+<a href="#">Privacy Policy</a>
+
+<a href="#">Disclaimer</a>
+
+</div>
+
+<div class="copy">
+
+© 2026 Sattaqueenfast.com . All Rights Reserved.
+
+</div>
+
+</footer>
+<!-- ========================= -->
+<!-- PART 7 : SEO + LOADER + FLOATING BUTTON -->
+<!-- ========================= -->
+
+<!-- Head सेक्शन में जोड़ें -->
+
+<meta name="robots" content="index,follow">
+<meta name="author" content="Fast Result Portal">
+<meta name="theme-color" content="#1565c0">
+
+<link rel="icon" href="favicon.png">
+
+<!-- ========================= -->
+<!-- BODY के शुरुआत में जोड़ें -->
+<!-- ========================= -->
+
+<div id="loader">
+<div class="spinner"></div>
+</div>
+
+<style>
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+}
+
+.spinner{
+width:60px;
+height:60px;
+border:6px solid #ddd;
+border-top:6px solid #1565c0;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+100%{
+transform:rotate(360deg);
+}
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:90px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+font-size:30px;
+color:#fff;
+box-shadow:0 5px 12px rgba(0,0,0,.3);
+z-index:9999;
+}
+
+</style>
+
+<a class="whatsapp" href="https://wa.me/911234567890" target="_blank">
+💬
+</a>
+
+<script>
+
+window.onload=function(){
+
+document.getElementById("loader").style.display="none";
+
+}
+
+</script>
+
+<footer style="background:#111;color:#fff;padding:25px;text-align:center;margin-top:30px;">
+
